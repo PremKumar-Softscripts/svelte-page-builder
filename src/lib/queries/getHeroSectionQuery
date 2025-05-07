@@ -1,0 +1,47 @@
+export const getHeroSectionQuery = `
+  *[_type == "heroSection"] {
+    title,
+    subtitle,
+    buttons[] {
+      text,
+      url,
+      openInNewTab
+    },
+    backgroundType,
+    backgroundColor,
+    backgroundImage {
+      asset-> {
+        url
+      }
+    },
+    backgroundVideo {
+      asset-> {
+        url
+      }
+    },
+    backgroundGradient,
+    height,
+    alignment,
+    textColor,
+    titleTypography {
+      fontFamily,
+      fontSize,
+      fontWeight,
+      lineHeight
+    },
+    subtitleTypography {
+      fontFamily,
+      fontSize,
+      fontWeight,
+      lineHeight
+    },
+    advanced {
+      margin,
+      padding,
+      zIndex,
+      position,
+      cssId,
+      cssClass
+    }
+  }
+`;

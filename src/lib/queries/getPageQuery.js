@@ -47,7 +47,7 @@ export const getPageQuery = `
         cssId,
         cssClass
       },
-      block  // needed for builderBlock
+      block
     }
   }
 `;
